@@ -21,3 +21,9 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+/src/resources
+.idea
+sb1-fiddle.iml
+sb1-fiddle.ipr
+sb1-fiddle.iws
