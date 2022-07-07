@@ -1,7 +1,7 @@
 import {ActionButton} from "@sb1/ffe-buttons-react";
 import Navigation from "./components/navigation";
 
-function App2() {
+function Page2() {
     return (
         <div className="App">
 
@@ -20,4 +20,4 @@ function App2() {
     );
 }
 
-export default App2;
+export default Page2;

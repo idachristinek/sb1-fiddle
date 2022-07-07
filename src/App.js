@@ -1,6 +1,4 @@
-//import './resources/main.css'; //comment out when running webpack script!
 import Navigation from "./components/navigation";
-
 import {ActionButton} from "@sb1/ffe-buttons-react";
 
 function App() {
