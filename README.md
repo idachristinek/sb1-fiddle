@@ -10,6 +10,8 @@ Therefore, is project is set up to help:
 
 Because of this, and to make sure no styling code is forgotten, the styling-part of the project is a little different.
 
+When first cloning this app `npm install` in root folder.
+
 ## Available Scripts
 
 In the project directory, you can run:
@@ -21,6 +23,8 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
+
+#### This will not recompile your styling, run `npm webpack` to generate new version of main.css
 
 
 ### `npm webpack`
