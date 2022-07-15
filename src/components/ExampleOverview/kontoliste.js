@@ -20,7 +20,7 @@ export const kontoliste = {
         },
         {
             "accountNumber": "42133901456",
-            "name": "BRUKSKONTO 2",
+            "name": "BRUKSKONTO 3",
             "description": "BRUKSKONTO FRI",
             "balance": 645.000,
             "availableBalance": 600.000,
@@ -37,7 +37,7 @@ export const kontoliste = {
             "type": "SAVINGS"
         },
         {
-            "accountNumber": "42133909846",
+            "accountNumber": "42132909890",
             "name": "BSU",
             "description": "Min BSU-konto",
             "balance": 10000.000,
@@ -46,7 +46,7 @@ export const kontoliste = {
             "type": "BSU"
         },
         {
-            "accountNumber": "42133906589",
+            "accountNumber": "42133906559",
             "name": "Lån",
             "description": "Mitt lån",
             "balance": -4000.000,

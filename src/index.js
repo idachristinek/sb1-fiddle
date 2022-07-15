@@ -5,11 +5,12 @@ import {
     BrowserRouter,
     Routes,
     Route,
-} from "react-router-dom";
+} from 'react-router-dom';
 
 import App from './App';
 import Page2 from './Page2'
-import MainPage from "./components/ExampleOverview/MainPage";
+import MainPage from './components/ExampleOverview/MainPage';
+import { AccountDetails } from './components/ExampleOverview/AccountDetails';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -18,6 +19,7 @@ root.render(
             <Route path="/" element={<App />} />
             <Route path="/2" element={<Page2 />} />
             <Route path="/3" element={<MainPage />} />
+            <Route path="/3/:accountNumber" element={<AccountDetails />} />
         </Routes>
     </BrowserRouter>
 );

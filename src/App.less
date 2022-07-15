@@ -1,11 +1,22 @@
 @import '~@sb1/ffe-core/less/ffe';
 @import '~@sb1/ffe-buttons/less/buttons';
 @import (inline) '~@sb1/ffe-webfonts/sb1-fonts.css';
+@import '~@sb1/ffe-message-box/less/ffe-message-box';
+@import '~@sb1/ffe-spinner/less/spinner';
+@import '~@sb1/ffe-cards/less/cards';
+
+@import "components/ExampleOverview/exampleOverview";
+
+
+html {
+  background-color: @ffe-farge-frost-30;
+  height: 100%;
+}
 
 .App {
   text-align: center;
-  background-color: @ffe-farge-frost-30;
-  height: 100%;
+  max-width: @breakpoint-md;
+  margin: 0 auto;
 }
 
 .App-header {
@@ -19,6 +30,6 @@
 
 
 .Navbar {
-  padding: 50px 0;
+  padding: 30px 0;
 
 }

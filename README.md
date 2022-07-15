@@ -31,3 +31,7 @@ You may also see any lint errors in the console.
 Creates two master-files: `main.js` and `main.css`
 The css file is the styling bundle made from the project files, to make sure your styling is included import it in `App.less`
 
+### `npm watch`
+runs webpack in watch mode
+
+#### For hotloading while developing use both `npm start` and `npm watch`

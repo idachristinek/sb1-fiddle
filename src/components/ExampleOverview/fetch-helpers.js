@@ -1,11 +1,13 @@
 import {kontoliste} from "./kontoliste";
 
+export const getKontoliste = (ok, loadingTime) =>
+    new Promise((resolve, reject) => {
+        if (!ok) {
+            return setTimeout(
+                () => reject(new Error('Accounts not found')),
+                loadingTime
+            );
+        }
 
-export function getKontoliste(ok) {
-    if (ok === true) {
-        return new Promise((resolve, reject) => {
-            setTimeout(resolve(kontoliste), Math.random() * 10000)
-        })
-    }
-    return null
-}
+        setTimeout(() => resolve(Object.values(kontoliste.accounts)), loadingTime);
+    });

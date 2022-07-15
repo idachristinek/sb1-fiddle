@@ -5,24 +5,26 @@
   "dependencies": {
     "@sb1/ffe-buttons": "^15.0.5",
     "@sb1/ffe-buttons-react": "^16.0.2",
+    "@sb1/ffe-cards": "^14.0.8",
+    "@sb1/ffe-cards-react": "^7.0.1",
     "@sb1/ffe-core": "^21.1.1",
     "@sb1/ffe-core-react": "^4.2.11",
+    "@sb1/ffe-icons-react": "^7.3.2",
+    "@sb1/ffe-message-box": "^10.1.1",
+    "@sb1/ffe-message-box-react": "^7.2.2",
+    "@sb1/ffe-spinner": "^4.1.12",
+    "@sb1/ffe-spinner-react": "^5.1.6",
     "@sb1/ffe-webfonts": "^3.0.2",
-    "@testing-library/jest-dom": "^5.16.4",
-    "@testing-library/react": "^13.3.0",
-    "@testing-library/user-event": "^13.5.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.3.0",
-    "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
+    "react-scripts": "5.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "webpack": "webpack --config webpack.config.js --mode production"
+    "webpack": "webpack --config webpack.config.js --mode production",
+    "watch": "webpack --config webpack.config.js --watch --mode production"
   },
   "eslintConfig": {
     "extends": [
