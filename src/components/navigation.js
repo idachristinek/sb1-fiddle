@@ -8,7 +8,7 @@ function Navigation() {
             <nav>
                 <Link to="/">App</Link> |{" "}
                 <Link to="/2">Page2</Link> |{" "}
-                <Link to="/3">Page3</Link>
+                <Link to="/eksempel">Eksempel</Link>
             </nav>
         </div>
     );
