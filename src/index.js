@@ -9,7 +9,7 @@ import {
 
 import App from './App';
 import Page2 from './Page2'
-import Page3 from "./Page3";
+import MinDrommeOversikt from "./features/eksempel/MinDrommeOversikt";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -17,7 +17,7 @@ root.render(
         <Routes>
             <Route path="/" element={<App/>}/>
             <Route path="/2" element={<Page2/>}/>
-            <Route path="/3" element={<Page3/>}/>
+            <Route path="/eksempel" element={<MinDrommeOversikt/>}/>
         </Routes>
     </BrowserRouter>
 );
