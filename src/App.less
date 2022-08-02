@@ -2,20 +2,26 @@
 @import '~@sb1/ffe-buttons/less/buttons';
 @import (inline) '~@sb1/ffe-webfonts/sb1-fonts.css';
 @import '~@sb1/ffe-cards/less/cards';
+@import '~@sb1/ffe-account-selector-react/less/ffe-account-selector';
+@import '~@sb1/ffe-account-selector-react/less/base-selector';
+@import '~@sb1/ffe-form/less/form';
+@import '~@sb1/ffe-grid/less/ffe-grid';
 @import './components/bankkkort/styles';
 @import './features/eksempel/styles';
+
 
 .App {
   text-align: center;
   background-color: @ffe-farge-frost-30;
+  min-height: 100vh;
 
   .drommeoversikt_container {
-    background: @ffe-farge-sand-70;
+    background-color: @ffe-farge-sand-70;
+    min-height: 100vh;
   }
 }
 
 .App-header {
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
