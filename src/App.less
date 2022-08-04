@@ -4,21 +4,19 @@
 @import '~@sb1/ffe-cards/less/cards';
 @import '~@sb1/ffe-account-selector-react/less/ffe-account-selector';
 @import '~@sb1/ffe-account-selector-react/less/base-selector';
+@import '~@sb1/ffe-searchable-dropdown-react/less/searchable-dropdown';
 @import '~@sb1/ffe-form/less/form';
 @import '~@sb1/ffe-grid/less/ffe-grid';
+@import '~@sb1/ffe-header/less/ffe-header';
 @import './components/bankkkort/styles';
 @import './features/eksempel/styles';
+@import './src/components/styles';
 
 
 .App {
   text-align: center;
-  background-color: @ffe-farge-frost-30;
+  background-color: @ffe-farge-sand-30;
   min-height: 100vh;
-
-  .drommeoversikt_container {
-    background-color: @ffe-farge-sand-70;
-    min-height: 100vh;
-  }
 }
 
 .App-header {
@@ -26,11 +24,29 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.App-heading {
+  margin-top: @ffe-spacing-2xl;
+}
+
+.App-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+
+  &:last-child {
+    margin-top: @ffe-spacing-lg;
+  }
+}
+
+.App-katten {
+  position: absolute;
+  bottom: 5%;
+  left: 20%;
 }
 
 .logo {
-  width: 200px;
-  height: 50px;
-  padding-top: 8px;
+  margin-top: @ffe-spacing-lg;
+  width: 150px;
 }
