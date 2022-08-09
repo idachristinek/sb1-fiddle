@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+import {StrongText} from "@sb1/ffe-core-react";
 import logo from "../logo.svg";
 
 function Navigation() {
@@ -24,6 +26,7 @@ function Navigation() {
                                 </a>
                             </li>
                         </ul>
+                        <Link to="/3"><StrongText>Eksempel-app</StrongText></Link>
                     </nav>
                 </div>
             </div>

@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './resources/main.css';
+import MainPage from './components/ExampleOverview/MainPage'
+import {AccountDetails} from'./components/ExampleOverview/AccountDetails'
 import {
     BrowserRouter,
     Routes,
@@ -20,6 +22,8 @@ root.render(
             <Route path="/din-bank" element={<DinBank/>}/>
             <Route path="/eksempel" element={<MinDrommeOversikt/>}/>
             <Route path="/overfor" element={<Overfor/>}/>
+            <Route path="/3" element={<MainPage />} />
+            <Route path="/3/:accountNumber" element={<AccountDetails />} />
         </Routes>
     </BrowserRouter>
 );
