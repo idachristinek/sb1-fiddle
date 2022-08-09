@@ -1,11 +1,10 @@
 import React from 'react';
-import {Heading3} from "@sb1/ffe-core-react";
-import {MyErrorMessage} from "../../components/ErrorMessage";
+import {Heading2} from "@sb1/ffe-core-react";
 import {IconCard} from "@sb1/ffe-cards-react";
 import {useNavigate} from "react-router-dom";
 import {HusIkon, MynterTreStablerIkon, SparegrisIkon, SporsmalstegnIkon} from "@sb1/ffe-icons-react";
 
-export const ListeMedCards = ({kontoer, heading, error, errorMessage}) => {
+export const ListeMedCards = ({kontoer, heading}) => {
 
         let navigate = useNavigate();
         const velgIkon = (kontoType) => {
@@ -22,9 +21,9 @@ export const ListeMedCards = ({kontoer, heading, error, errorMessage}) => {
             }
         }
         return (
+            kontoer.length > 0 &&
             <div className="liste-med-cards-container">
-                <Heading3 className="drommeoversikt_wrapper-heading">{heading}</Heading3>
-                {error && <MyErrorMessage errorMessage={errorMessage}/>}
+                <Heading2 className="drommeoversikt_wrapper-heading" lookLike={3}>{heading}</Heading2>
                 {kontoer.map((konto) => {
                     return <IconCard
                         key={konto.accountNumber}
