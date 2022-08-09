@@ -2,7 +2,7 @@ import {kontoliste} from "./kontoliste";
 
 export const getKontoliste = (ok, loadingTime) =>
     new Promise((resolve, reject) => {
-        if (!ok) {
+        if (ok) {
             return setTimeout(
                 () => reject(new Error('Accounts not found')),
                 loadingTime
