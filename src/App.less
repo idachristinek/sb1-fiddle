@@ -1,39 +1,55 @@
 @import '~@sb1/ffe-core/less/ffe';
 @import '~@sb1/ffe-buttons/less/buttons';
 @import (inline) '~@sb1/ffe-webfonts/sb1-fonts.css';
+@import '~@sb1/ffe-cards/less/cards';
+@import '~@sb1/ffe-account-selector-react/less/ffe-account-selector';
+@import '~@sb1/ffe-account-selector-react/less/base-selector';
+@import '~@sb1/ffe-searchable-dropdown-react/less/searchable-dropdown';
+@import '~@sb1/ffe-form/less/form';
+@import '~@sb1/ffe-grid/less/ffe-grid';
+@import '~@sb1/ffe-header/less/ffe-header';
 @import '~@sb1/ffe-message-box/less/ffe-message-box';
 @import '~@sb1/ffe-spinner/less/spinner';
-@import '~@sb1/ffe-cards/less/cards';
-
+@import './components/bankkkort/styles';
+@import './features/eksempel/styles';
+@import './src/components/styles';
 @import "components/ExampleOverview/exampleOverview";
 
 
-html {
-  background-color: @ffe-farge-frost-30;
-  height: 100%;
-}
-
 .App {
   text-align: center;
-  max-width: @breakpoint-md;
-  margin: 0 auto;
+  background-color: @ffe-farge-sand-30;
+  min-height: 100vh;
 }
 
 .App-header {
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
 }
 
-.Navbar {
-  padding-bottom: 30px;
+.App-heading {
+  margin-top: @ffe-spacing-2xl;
+}
+
+.App-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+
+  &:last-child {
+    margin-top: @ffe-spacing-lg;
+  }
+}
+
+.App-katten {
+  position: absolute;
+  bottom: 5%;
+  left: 20%;
 }
 
 .logo {
-  width: 200px;
-  height: 50px;
-  margin: 16px 0;
+  margin-top: @ffe-spacing-lg;
+  width: 150px;
 }

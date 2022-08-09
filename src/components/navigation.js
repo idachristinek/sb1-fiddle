@@ -6,11 +6,30 @@ function Navigation() {
     return (
         <div className="Navbar">
             <img src={logo} alt="Sparebank 1" className="logo"/>
-            <nav>
-                <Link to="/"><StrongText>App</StrongText></Link> |{" "}
-                <Link to="/2"><StrongText>Page2</StrongText></Link> |{" "}
-                <Link to="/3"><StrongText>Eksempel-app</StrongText></Link>
-            </nav>
+            <div className="ffe-header__border">
+                <div className="ffe-header__wrapper">
+                    <nav className="ffe-header__site-nav" role="navigation">
+                        <ul className="ffe-header__list ffe-header__site-nav-list">
+                            <li className="ffe-header__list-item">
+                                <a className="ffe-header__link ffe-small-text" href="/">
+                                    Velkommen
+                                </a>
+                            </li>
+                            <li className="ffe-header__list-item">
+                                <a className="ffe-header__link  ffe-small-text" href="/din-bank">
+                                    Din bank
+                                </a>
+                            </li>
+                            <li className="ffe-header__list-item">
+                                <a className="ffe-header__link ffe-small-text" href="/eksempel">
+                                    Eksempler
+                                </a>
+                            </li>
+                        </ul>
+                        <Link to="/3"><StrongText>Eksempel-app</StrongText></Link>
+                    </nav>
+                </div>
+            </div>
         </div>
     );
 }
