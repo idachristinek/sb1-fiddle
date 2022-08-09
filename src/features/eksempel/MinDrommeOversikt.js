@@ -1,11 +1,6 @@
-import {Heading1, Heading3} from "@sb1/ffe-core-react";
-import {ButtonGroup, SecondaryButton, ShortcutButton} from "@sb1/ffe-buttons-react";
-import CardExample from "../../components/card/CardExample";
-import Bankkort from "../../components/bankkkort/Bankkort";
+import {Heading1} from "@sb1/ffe-core-react";
+import {ButtonGroup, SecondaryButton} from "@sb1/ffe-buttons-react";
 import Navigation from "../../components/navigation";
-import {HusIkon, MynterTreStablerIkon, SparegrisIkon, SporsmalstegnIkon} from "@sb1/ffe-icons-react";
-import {accounts} from "../../components/overforing/kontoer";
-import {formatNumber} from "@sb1/ffe-formatters";
 import React, {useState} from "react";
 import {getKontoliste} from "../../components/ExampleOverview/fetch-helpers";
 import ListeMedCards from "./ListeMedCards";
@@ -91,10 +86,12 @@ const MinDrommeOversikt = () => {
             <ButtonGroup>
                 <SecondaryButton onClick={() => {
                     hentKontoEtterType('BRUK')
-                }} className="konto-knapp">{hentBrukskontoer ? 'Skjul brukskontoer' : 'Vis brukskontoer'}</SecondaryButton>
+                }}
+                                 className="konto-knapp">{hentBrukskontoer ? 'Skjul brukskontoer' : 'Vis brukskontoer'}</SecondaryButton>
                 <SecondaryButton onClick={() => {
                     hentKontoEtterType('SAVINGS')
-                }} className="konto-knapp">{hentSparekontoer ? 'Skjul sparekontoer' : 'Vis sparekontoer'}</SecondaryButton>
+                }}
+                                 className="konto-knapp">{hentSparekontoer ? 'Skjul sparekontoer' : 'Vis sparekontoer'}</SecondaryButton>
             </ButtonGroup>
             <Grid className="kontoliste-container" topPadding={false}>
                 <GridRow>

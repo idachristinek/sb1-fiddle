@@ -3,6 +3,7 @@ import {Heading2} from "@sb1/ffe-core-react";
 import {IconCard} from "@sb1/ffe-cards-react";
 import {useNavigate} from "react-router-dom";
 import {HusIkon, MynterTreStablerIkon, SparegrisIkon, SporsmalstegnIkon} from "@sb1/ffe-icons-react";
+import {formatNumber} from "@sb1/ffe-formatters";
 
 export const ListeMedCards = ({kontoer, heading}) => {
 
@@ -37,7 +38,7 @@ export const ListeMedCards = ({kontoer, heading}) => {
                         {({Title, Subtext}) => (
                             <>
                                 <Title>{konto.name}</Title>
-                                <Subtext>{konto.balance}</Subtext>
+                                <Subtext>{formatNumber(konto.balance)}</Subtext>
                             </>
                         )}
                     </IconCard>
